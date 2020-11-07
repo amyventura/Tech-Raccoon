@@ -8,6 +8,9 @@ const errorHandler = require("./utils/errorHandler");
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+// good place for a logging middleware library***
+
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
