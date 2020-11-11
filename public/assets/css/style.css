@@ -1,99 +1,134 @@
 body {
-  width: 80%;
-  height: 900px;
-  background-color: #e7e7e7ec;
-  /* color: white; */
-
+    width: 80%;
+    height: 900px;
+    background-color: #e7e7e7ec;
 }
 
 #top-bar {
-  margin: 25px 0px 25px 0px;
-  padding: 15px;
-  border-radius: 10px;
+    margin: 25px 0px 25px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-
 .spacing-reset {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 .list-reset {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: 0;
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 990px;
-  }
+    .container {
+        width: 990px;
+    }
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 990px;
-  }
+    .container {
+        width: 990px;
+    }
 }
 
 .enter_section {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 #enter_text {
-  width: 400px;
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: auto;
-  font-size: 16px;
+    width: 400px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 16px;
 }
 
 .task {
-  border-color: black;
-  border-style: solid;
-  border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .button-size {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 #text-enter-button {
-  margin-top: 10px;
-  width: 398px;
-  margin-bottom: 16px;
-}
-
-h1 {
-  /* color: white; */
+    margin-top: 10px;
+    width: 398px;
+    margin-bottom: 16px;
 }
 
 .logo {
-  max-width: 50%;
-  padding: 8px;
+    max-width: 50%;
+    margin-top: 30px;
+    padding: 8px;
 }
 
 .title {
-  max-width: 50%;
-  padding: 5%;
+    max-width: 50%;
+    padding: 5%;
 }
 
 .main-button {
-  width: 200px;
-  height: 100px;
-  margin: 5%;
-  font-size: large;
+    width: 200px;
+    height: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(255, 115, 0);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(114, 114, 114, 0.2), 0 4px 10px 0 rgba(51, 51, 51, 0.19);
 }
 .overall {
-  background-color: ffffff;
-  border-radius: 10px;
-  border: 5px solid 000080;
+    background-color: ffffff;
+    border-radius: 10px;
+    border: 5px solid 000080;
 }
 .description {
-  color: rgb(177, 177, 177);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    background-color: rgb(19, 18, 18);
+    border-radius: 25px;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.subtitle {
+  color: rgb(0, 0, 0);
+  font-family: 'Lobster', cursive;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5%;
+  width: 100%;
+  height: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.who {
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/0B4ED7B8-6C6A-4031-BEE1253D115FD0CC_source.jpg?w=590&h=800&9717A2E2-EE9D-4CD5-A52BB4E3ED51CBF4");
+    opacity: 95%;
+}
+
+.links {
+    padding-top: 5%;
+    padding-left: 50px;
 }
