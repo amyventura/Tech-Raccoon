@@ -11,13 +11,13 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link href="./assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="row navbar navbar-default col-md-8" id="top-bar">
+    <nav class="row navbar navbar-default col-md-12" id="top-bar">
         <div class="container-fluid col-md-10">
             <div class="navbar-header">
                 <img src="../assets/logo.png" class="logo" />
@@ -36,19 +36,19 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">
-                    <button class="btn">
-                        Employer Login
+                    <button class="btn" id="job-seeker-login">
+                        Job Seeker Login
                     </button>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <button class="btn">
-                        Job Seeker Login
+                    <button class="btn" id="my-saved-jobs">
+                        My Saved Jobs
                     </button>
                 </a>
             </div>
         </div>
     </nav>
-    <div class="overall col-md-8 shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="overall col-md-12 shadow-sm p-3 mb-5 bg-white rounded">
         <h4 class="description col-md-12">
             "Hello there! We are an application that connects local small businesses with aspiring app developers! How can we help you
             today?"
