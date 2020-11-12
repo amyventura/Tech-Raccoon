@@ -1,15 +1,15 @@
 {
   "development": {
     "username": "root",
-    "password": "LOCAL_MYSQL_PASS",
-    "database": "test_db",
+    "password": "12345678",
+    "database": "TechRaccoon",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "LOCAL_MYSQL_PASS",
-    "database": "test_db",
+    "password": "12345678",
+    "database": "TechRaccoon",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
