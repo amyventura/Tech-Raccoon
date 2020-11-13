@@ -160,10 +160,26 @@ body {
     display: block;
 }
 
+
 .submit {
     width: 20%;
     align-self: center;
     /* display: block; */
     margin-top: 5%;
     margin-bottom: 10%;
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    background-color: rgb(19, 18, 18);
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
 }
