@@ -159,3 +159,11 @@ body {
     margin: auto;
     display: block;
 }
+
+.submit {
+    width: 20%;
+    align-self: center;
+    /* display: block; */
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
