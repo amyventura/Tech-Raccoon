@@ -6,7 +6,7 @@ const db = require("../../models");
 router.get("/", (req, res) => {
    // get comments from db and send to template
    db.Test.findAll({})
-      .then(comments => res.render("index", { comments: comments }))
+      .then(comments => res.render("home", { comments: comments }))
       .catch(err => {
          res.status(500);
          next(err);
