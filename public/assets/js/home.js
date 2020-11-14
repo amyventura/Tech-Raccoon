@@ -8,6 +8,7 @@ $(document).ready(function() {
     // If time, these as well
     const jobSeekerLogin = $('#job-seeker-login');
     const savedJobs = $('#my-saved-jobs');
+    const homeBtn = $("#home-button");
 
     // Hide in different pages
     const hideExceptIndex = $("#hide-when-not-index");
@@ -26,3 +27,6 @@ $(document).ready(function() {
 })
 
 // Function to click into various pages
+function findJobseeker() {
+
+}
