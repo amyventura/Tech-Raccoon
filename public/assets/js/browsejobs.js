@@ -10,7 +10,7 @@ $(document).ready(function () {
         if (locationString) {
             locationString = "/location/" + locationString;
         }
-        $.get("/api/jobss" + locationString, function (data) {
+        $.get("/api/jobs" + locationString, function (data) {
             console.log("Jobs", data);
             jobs = data;
             if (!jobss || !jobs.length) {
