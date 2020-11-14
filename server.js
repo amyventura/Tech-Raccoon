@@ -44,7 +44,11 @@ app.use(errorHandler);
 // drops all tables on eevery restart - one is local, and one is in production - if pushing with force true, you're pushing all tables remotely
 db.sequelize.sync({ force: true }).then(async () => {
    // seed db
-   // await seed(db.Test);
+   await seed(db.Education);
+   await seed(db.Jobs);
+   await seed(db.Jobseekers);
+   await seed(db.Technologies);
+
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);
