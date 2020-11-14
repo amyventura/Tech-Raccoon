@@ -22,10 +22,7 @@ $(document).ready(function() {
 
     console.log("Loaded!");
 
-    
+
 })
 
-
-
-
-//API ROUTE REF BELOW
+// Function to click into various pages
