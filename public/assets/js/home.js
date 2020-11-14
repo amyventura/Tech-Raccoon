@@ -19,4 +19,13 @@ $(document).ready(function() {
     const postJobBtn = $("#post-job-btn");
     const getJobBtn = $("#job-search-btn");
     const createProfileBtn = $("#create-profile-btn");
+
+    console.log("Loaded!");
+
+    
 })
+
+
+
+
+//API ROUTE REF BELOW
