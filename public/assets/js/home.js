@@ -28,5 +28,5 @@ $(document).ready(function() {
 
 // Function to click into various pages
 function findJobseeker() {
-
+console.log("hi");
 }
