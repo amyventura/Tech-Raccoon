@@ -23,16 +23,19 @@ const exphbs = require("express-handlebars");
 app.engine(
    "handlebars",
    exphbs({
-      defaultLayout: "main",
-      partialsDir: __dirname + "/views/partials/"
+      // defaultLayout: "main",
+      // partialsDir: __dirname + "/views/partials/"
    })
 );
 app.set("view engine", "handlebars");
+app.get('/', function (req, res) {
+   res.render('home');
+});
 
 // var routes = require("./controllers/burgersController.js");
 
 app.use("/api", apiRoutes);
-app.use(htmlRoutes);
+// app.use(htmlRoutes);
 
 // error handling
 app.use(errorHandler);
