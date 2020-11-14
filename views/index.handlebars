@@ -1,17 +1,47 @@
-<div class="col-md-12 "
-     id="top-bar">
-   <h1> Sequelize box </h1>
+<!-- THIS CAN BE HIDDEN IN SCRIPT ON ALL PAGES BUT MAIN/INDEX/HOME -->
+<div class="overall col-md-12 shadow-sm p-3 mb-5 bg-white rounded" id="hide-when-not-index">
+   <h3 class="description col-md-12">
+      "Hello there! We are an application that connects local small businesses with aspiring app developers! How can we
+      help you
+      today?"
+   </h3>
+   <div id="find-help" class="who col-md-6">
+      <h2 class="subtitle">Find a Raccoon</h2>
+      <div class="row post-job">
+         <button class="main-button" id="post-job-btn">postJob</button>
+      </div>
+      <div class="row find-raccoon">
+         <button class="main-button" id="find-raccoon-btn">findRaccoon</button>
+      </div>
+   </div>
+   <div id="get-job" class="who col-md-6">
+      <h2 class="subtitle">Find a Job</h2>
+      <div class="row job-search">
+         <button class="main-button" id="job-search-btn">browseJobs</button>
+      </div>
+      <div class="row create-profile">
+         <button class="main-button" id="create-profile-btn">createProfile</button>
+      </div>
+   </div>
 </div>
 
+
+{{!-- BELOW IS WHERE WE INSERT BLOCK INFORMATION FOR BROWSE JOB AND FIND RACCOON--}}
 <div class="container">
    <div class="row">
 
 
-      {{!-- view cooment  --}}
-      {{> viewComments}}
-
-      {{!-- post comment --}}
-      {{> postComments}}
-
+      {{!-- Get/view jobs --}}
+      <ul id="hide-when-not-browsejobs">
+         {{#each jobs}}
+            {{> viewJobs}}
+         {{/each}}
+      </ul>
+      {{!-- Get/view raccoons --}}
+      <ul id="hide-when-not-findraccoons">
+         {{#each jobseekers}}
+            {{> viewRaccoons}}
+         {{/each}}
+      </ul>
    </div>
 </div>
