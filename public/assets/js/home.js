@@ -56,9 +56,10 @@ $(document).ready(function() {
         remote: $("#remote-input").val().trim(),
     }
 
+    console.log(newJobseeker);
          // Send the POST request.
          //below not set up in api routes
-        $.ajax('/api/jobseekers', {
+        $.ajax('/getraccoons', {
             type: 'POST',
             data: newJobseeker,
         }).then(function() {
@@ -66,20 +67,38 @@ $(document).ready(function() {
             // Reload the page to get the updated list
             location.reload()
         })
-    // function radioSelect(form, name) {
-    //     var val;
-    //     // get list of radio buttons with specified name
-    //     var radios = form.elements[name];
-        
-    //     // loop through list of radio buttons
-    //     for (var i=0, len=radios.length; i<len; i++) {
-    //         if ( radios[i].checked ) { // radio checked?
-    //             val = radios[i].value; // if so, hold its value in val
-    //             break; // and break out of for loop
-    //         }
-    //     }
-    //     return val;
-    // }
-
 })
+
+var newJob = {
+    comp_name: $("#business-input").val().trim(),
+    posting_date: $("#date-input").val().trim(),
+    job_email: $("#job-email-input").val().trim(),
+    job_descrip: $("#description-input").val().trim(),
+    education_id: $("#date-input").val().trim(),
+    primary_tech_id: $("#seek1").val().trim(),
+    secondary_tech_id: $("#seek2").val().trim(),
+    remote: $("#remote-input").val().trim(),
+}
+
+console.log(newJob);
+     // Send the POST request.
+     //below not set up in api routes
+    $.ajax('/getjobs', {
+        type: 'POST',
+        data: newJob,
+    }).then(function() {
+        console.log('created new Job')
+        // Reload the page to get the updated list
+        location.reload()
+    })
+
+
+
+
+
+
+
+
+
+
 })
