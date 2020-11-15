@@ -187,3 +187,7 @@ body {
 .block {
     display: block;
 }
+
+.card {
+    display: inline-block;
+}
