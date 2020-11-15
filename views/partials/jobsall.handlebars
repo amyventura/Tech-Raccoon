@@ -1,0 +1,25 @@
+<table class=" table table-dark table-striped text-center">
+   <tbody>
+      {{#each comments}}
+      <tr>
+         <td> {{this.dataValues.comment}}</td>
+         <td> {{this.dataValues.createdAt}}</td>
+      </tr>
+      {{/each}}
+   </tbody>
+
+</table>
+
+
+{{#each jobsall}}
+<div class="card" style="width: 18rem;">
+   <div class="card-body">
+      <h5 class="card-title">Offered from: {{this.comp_name}}</h5>
+      <p class="card-text">Description: {{this.job_descrip}}</p>
+      <a href="#" class="btn btn-primary">Job Link</a>
+      <h6 class="card-title">Required: {{this.primary_tech_id}}, {{this.secondary_tech_id}}
+      </h6>
+      <h6 class="card-title">Remote: {{this.remote}}</h6>
+   </div>
+</div>
+{{/each}}

@@ -15,12 +15,12 @@ module.exports = function(app) {
     })
 
     app.get('/postjobs', (req, res) => {
-      res.render('postjobs')
-  })
+        res.render('postjobs')
+    })
 
-  app.get('/postprofiles', (req, res) => {
-   res.render('postprofiles')
-})
+    app.get('/postprofiles', (req, res) => {
+        res.render('postprofiles')
+    })
 
     app.get('/', (req, res) => {
         res.render('home')
