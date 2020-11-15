@@ -4,7 +4,6 @@ const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
 const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
-const Op = Sequelize.Op;
 
 const PORT = process.env.PORT || 3000;
 const app = express();
