@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const commentsRoute = require('./comments')
+// const commentsRoute = require('./comments')
 
 module.exports = function(app) {
-    // get route -> index
 
     //BELOW IS WORKING!!!!! :)
     app.get('/getjobs', (req, res) => {
@@ -26,8 +25,23 @@ module.exports = function(app) {
         res.render('home')
     })
 
-    // comments page
-    // router.use("/comments", commentsRoute);
-
-    //  module.exports = router
 }
+
+
+// // From Comments.js example
+// const express = require("express");
+// const router = express.Router();
+// const db = require("../../models");
+
+// // routing (html) /commnets
+// router.get("/", (req, res) => {
+//    // get comments from db and send to template
+//    db.Test.findAll({})
+//       .then(comments => res.render("home", { comments: comments }))
+//       .catch(err => {
+//          res.status(500);
+//          next(err);
+//       });
+// });
+
+// module.exports = router;
