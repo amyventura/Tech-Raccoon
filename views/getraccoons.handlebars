@@ -1,0 +1,20 @@
+<div class="overall col-md-12 shadow-sm p-3 mb-5 bg-white rounded" id="hide-when-not-index">
+    <h3 class="description col-md-12">
+        Browse Available Coders
+    </h3>
+</div>
+
+
+{{!-- BELOW IS WHERE WE INSERT BLOCK INFORMATION --}}
+<div class="container">
+    <div class="row">
+        {{!-- Get/view raccoons --}}
+        <ul id="hide-when-not-findraccoons">
+            {{#each jobseekers}}
+            {{> jobseekers/codersall}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<script type='text/javascript' src='./assets/js/home.js'></script>

@@ -1,0 +1,57 @@
+<div class="overall col-md-12 shadow-sm p-3 mb-5 bg-white rounded" id="hide-when-not-index">
+    <h3 class="description col-md-12">
+        Post a New Job
+    </h3>
+</div>
+
+
+{{!-- BELOW IS WHERE WE INSERT BLOCK INFORMATION --}}
+<div class="create row container-fluid col-md-12">
+    <form class="create col-md-12">
+        <div class="form-group col-md-6">
+            <label for="exampleInputFirst">Business Name</label>
+            <input type="text" class="form-control" id="business-input" placeholder="Ex: The Upper Crust">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="exampleInputLast">Posting Date</label>
+            <input type="date" class="form-control" id="date-input" placeholder="Raccoonerson">
+        </div>
+        <div class="form-group col-md-12">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="job-email-input" placeholder="Email">
+        </div>
+        <div class="form-group" class="col-md-10">
+            <label for="sel1">Seeking Primary Technology</label>
+            <select class="form-control" id="seek1">
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>UI/UX</option>
+                <option>Design</option>
+            </select>
+        </div>
+        <div class="form-group" class="col-md-12">
+            <label for="sel1">Seeking Secondary Technology</label>
+            <select class="form-control" id="seek2">
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>UI/UX</option>
+                <option>Design</option>
+                <option>None</option>
+            </select>
+        </div>
+        <div class="form-group col-md-12">
+            <label for="exampleInputGithub">Brief Description</label>
+            <input type="text" class="form-control" id="description-input" placeholder="Ex: This is a front-end website building job for our local pizza business, The Upper Crust!">
+        </div>
+        <div class="row col-md-12">
+            <button type="submit" class="btn btn-warning submit" id="post-job-submit">Submit</button>
+        </div>
+    </form>
+
+
+</div>
+
+<!-- Job posts will print -->
+<div class="jobContainer"></div>
+
+<script type='text/javascript' src='./assets/js/home.js'></script>
