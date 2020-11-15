@@ -1,13 +1,24 @@
-const express = require("express");
-const router = express.Router();
-const commentsRoute = require("./comments");
+const express = require('express')
+const router = express.Router()
+const commentsRoute = require('./comments')
 
-// get route -> index
-router.get("/", (req, res) => {
-   res.redirect("/comments");
-});
+module.exports = function(app) {
+    // get route -> index
 
-// comments page
-router.use("/comments", commentsRoute);
 
-module.exports = router;
+    //BELOW IS WORKING!!!!! :)
+    app.get('/getjobs', (req, res) => {
+        console.log('getjobs!')
+        res.render('getjobs')
+    })
+
+    app.get('/', (req, res) => {
+        res.render('home')
+    })
+
+
+    // comments page
+    // router.use("/comments", commentsRoute);
+
+    //  module.exports = router
+}
