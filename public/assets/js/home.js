@@ -25,6 +25,18 @@ $(document).ready(function() {
 
     // Function to click into various pages
     getJobBtn.click(function() {
-        location.href = "/getjobs";
+        location.href = '/getjobs'
+    });
+    findRaccoonBtn.click(function() {
+        location.href = '/getraccoons'
+    });
+    postJobBtn.click(function() {
+        location.href = '/postjobs'
+    });
+    createProfileBtn.click(function() {
+        location.href = '/postprofiles'
+    });
+    homeBtn.click(function() {
+        location.href = '/'
     })
 })
