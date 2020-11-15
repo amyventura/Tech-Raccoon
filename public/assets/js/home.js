@@ -38,27 +38,44 @@ $(document).ready(function() {
         location.href = '/'
     })
 
-
-//On click submits profile
+    //On click submits profile
     submitProfile.click(function(event) {
-        event.preventDefault();
-    
-    var newJobseeker = {
-        first_name: $("#first-input").val().trim(),
-        last_name: $("#last-input").val().trim(),
-        email: $("#email-input").val().trim(),
-        primary_tech_id: $("#profile1").val().trim(),
-        secondary_tech_id: $("#profile2").val().trim(),
-        yr_exp: $("#experience-input").val().trim(),
-        // check below
-        education_id: $("#education-form").val().trim(),
-        github: $("#github-input").val().trim(),
-        remote: $("#remote-input").val().trim(),
-    }
+        event.preventDefault()
 
-    console.log(newJobseeker);
-         // Send the POST request.
-         //below not set up in api routes
+        var newJobseeker = {
+            first_name: $('#first-input')
+                .val()
+                .trim(),
+            last_name: $('#last-input')
+                .val()
+                .trim(),
+            email: $('#email-input')
+                .val()
+                .trim(),
+            primary_tech_id: $('#profile1')
+                .val()
+                .trim(),
+            secondary_tech_id: $('#profile2')
+                .val()
+                .trim(),
+            yr_exp: $('#experience-input')
+                .val()
+                .trim(),
+            // check below
+            education_id: $('#education-form')
+                .val()
+                .trim(),
+            github: $('#github-input')
+                .val()
+                .trim(),
+            remote: $('#remote-input')
+                .val()
+                .trim(),
+        }
+
+        console.log(newJobseeker)
+        // Send the POST request.
+        //below not set up in api routes
         $.ajax('/getraccoons', {
             type: 'POST',
             data: newJobseeker,
@@ -67,38 +84,48 @@ $(document).ready(function() {
             // Reload the page to get the updated list
             location.reload()
         })
-})
-
-var newJob = {
-    comp_name: $("#business-input").val().trim(),
-    posting_date: $("#date-input").val().trim(),
-    job_email: $("#job-email-input").val().trim(),
-    job_descrip: $("#description-input").val().trim(),
-    education_id: $("#date-input").val().trim(),
-    primary_tech_id: $("#seek1").val().trim(),
-    secondary_tech_id: $("#seek2").val().trim(),
-    remote: $("#remote-input").val().trim(),
-}
-
-console.log(newJob);
-     // Send the POST request.
-     //below not set up in api routes
-    $.ajax('/getjobs', {
-        type: 'POST',
-        data: newJob,
-    }).then(function() {
-        console.log('created new Job')
-        // Reload the page to get the updated list
-        location.reload()
     })
 
+    submitJob.click(function(event) {
+        event.preventDefault()
 
+        var newJob = {
+            comp_name: $('#business-input')
+                .val()
+                .trim(),
+            posting_date: $('#date-input')
+                .val()
+                .trim(),
+            job_email: $('#job-email-input')
+                .val()
+                .trim(),
+            job_descrip: $('#description-input')
+                .val()
+                .trim(),
+            education_id: $('#date-input')
+                .val()
+                .trim(),
+            primary_tech_id: $('#seek1')
+                .val()
+                .trim(),
+            secondary_tech_id: $('#seek2')
+                .val()
+                .trim(),
+            remote: $('#remote-input')
+                .val()
+                .trim(),
+        }
 
-
-
-
-
-
-
-
+        console.log(newJob)
+        // Send the POST request.
+        //below not set up in api routes
+        $.ajax('/getjobs', {
+            type: 'POST',
+            data: newJob,
+        }).then(function() {
+            console.log('created new Job')
+            // Reload the page to get the updated list
+            location.reload()
+        })
+    })
 })
