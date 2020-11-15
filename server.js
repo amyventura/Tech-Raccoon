@@ -1,3 +1,4 @@
+
 const express = require('express')
 const exphbs = require('express-handlebars')
 const handlebars = require('handlebars')
@@ -6,6 +7,7 @@ const htmlRoutes = require('./routes/html-routes/html-routes.js')
 const db = require('./models')
 const seed = require('./utils/seed.js')
 const errorHandler = require('./utils/errorHandler.js')
+
 const PORT = process.env.PORT || 3000
 const app = express()
 
