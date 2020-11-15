@@ -1,10 +1,11 @@
 const express = require('express')
+const exphbs = require('express-handlebars')
+const handlebars = require('handlebars')
 const apiRoutes = require('./routes/api-routes')
 const htmlRoutes = require('./routes/html-routes')
 const db = require('./models')
-const seed = require('./utils/seed')
-const errorHandler = require('./utils/errorHandler')
-
+const seed = require('./utils/seed.js')
+const errorHandler = require('./utils/errorHandler.js')
 const PORT = process.env.PORT || 3000
 const app = express()
 
@@ -18,8 +19,6 @@ require('./routes/html-routes/index.js')(app)
 // Parse application body
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-
-const exphbs = require('express-handlebars')
 
 app.engine(
     'handlebars',
@@ -36,7 +35,7 @@ app.get('/', function(req, res) {
 // var routes = require("./controllers/burgersController.js");
 
 app.use('/api', apiRoutes)
-app.use(htmlRoutes);
+app.use(htmlRoutes)
 
 // error handling
 app.use(errorHandler)
