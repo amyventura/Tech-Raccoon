@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 // good place for a logging middleware library***
+app.use(express.urlencoded({
+   extended: true
+}))
+app.use(express.json());
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -19,10 +23,6 @@ require("./routes/html-routes/jobs-html-routes.js")(app);
 require("./routes/html-routes/html-routes.js")(app);
 
 // Parse application body
-app.use(express.urlencoded({
-   extended: true
-}))
-app.use(express.json());
 
 app.engine(
    "handlebars",
