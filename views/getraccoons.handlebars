@@ -7,12 +7,13 @@
 
 {{!-- BELOW IS WHERE WE INSERT BLOCK INFORMATION --}}
 <div class="container">
+    {{!-- Get/view raccoons --}}
     <div class="row">
-        {{!-- Get/view raccoons --}}
-
-            {{> codersall}}
-
+        {{#each raccoons}}
+        {{> codersall}}
+        {{/each}}
     </div>
+
 </div>
 
 <script type='text/javascript' src='./assets/js/home.js'></script>

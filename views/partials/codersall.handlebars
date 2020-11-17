@@ -1,64 +1,13 @@
-{{!-- <div class="container">
-   <div class="row">
-      <div class="col-md-12 text-center enter_section">
-         <form action="/api/comments/create" method="POST">
-            <input type="text" class="form-control" name="comment" value="" placeholder="add your comment"
-               id="enter_text">
-            <button type="submit" class="btn btn-dark" id="text-enter-button">comment</button>
-         </form>
-      </div>
+
+<div class="card col-md-3">
+   <div class="card-body">
+      <h5 class="card-title">Jobseeker: {{dataValues.first_name}} {{dataValues.last_name}}</h5>
+      <p class="card-text">{{dataValues.yr_exp}} years of experience</p>
+      {{!-- create link below dynamically --}}
+      <a href="#" class="btn btn-primary">Github {{dataValues.github}}</a>
+      <h6 class="card-title">Good at: {{dataValues.primary_tech_id}}, {{dataValues.secondary_tech_id}}
+      </h6>
+      <h6 class="card-title">Remote: {{dataValues.remote}}</h6>
+      <h6 class="card-title">Education: {{dataValues.education_id}}</h6>
    </div>
-</div> --}}
-
-
-<div class="row">
-
-   <div class="card col-md-3">
-      <div class="card-body">
-         <h5 class="card-title">Jobseeker: {{first_name}} {{last_name}}</h5>
-         <p class="card-text">{{education_id}} years of experience</p>
-         {{!-- create link below dynamically --}}
-         <a href="#" class="btn btn-primary">Github {{github}}</a>
-         <h6 class="card-title">Good at: {{primary_tech_id}}, {{secondary_tech_id}}
-         </h6>
-         <h6 class="card-title">Remote: {{remote}}</h6>
-      </div>
-   </div>
-
-   <div class="card col-md-3">
-      <div class="card-body">
-         <h5 class="card-title">Jobseeker: {{first_name}} {{last_name}}</h5>
-         <p class="card-text">{{education_id}} years of experience</p>
-         {{!-- create link below dynamically --}}
-         <a href="#" class="btn btn-primary">Github {{github}}</a>
-         <h6 class="card-title">Good at: {{primary_tech_id}}, {{secondary_tech_id}}
-         </h6>
-         <h6 class="card-title">Remote: {{remote}}</h6>
-      </div>
-   </div>
-
-   <div class="card col-md-3">
-      <div class="card-body">
-         <h5 class="card-title">Jobseeker: {{first_name}} {{last_name}}</h5>
-         <p class="card-text">{{education_id}} years of experience</p>
-         {{!-- create link below dynamically --}}
-         <a href="#" class="btn btn-primary">Github {{github}}</a>
-         <h6 class="card-title">Good at: {{primary_tech_id}}, {{secondary_tech_id}}
-         </h6>
-         <h6 class="card-title">Remote: {{remote}}</h6>
-      </div>
-   </div>
-
-   <div class="card col-md-3">
-      <div class="card-body">
-         <h5 class="card-title">Jobseeker: {{first_name}} {{last_name}}</h5>
-         <p class="card-text">{{education_id}} years of experience</p>
-         {{!-- create link below dynamically --}}
-         <a href="#" class="btn btn-primary">Github {{github}}</a>
-         <h6 class="card-title">Good at: {{primary_tech_id}}, {{secondary_tech_id}}
-         </h6>
-         <h6 class="card-title">Remote: {{remote}}</h6>
-      </div>
-   </div>
-
 </div>
