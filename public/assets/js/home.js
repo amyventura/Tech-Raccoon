@@ -76,7 +76,7 @@ $(document).ready(function() {
         console.log(newJobseeker)
         // Send the POST request.
         //below not set up in api routes
-        $.ajax('/getraccoons', {
+        $.ajax('/api/getraccoons', {
             type: 'POST',
             data: newJobseeker,
         }).then(function() {
