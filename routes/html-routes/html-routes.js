@@ -2,24 +2,19 @@ const db = require('../../models')
 
 module.exports = function(app) {
     //BELOW IS WORKING!!!!! :)
-    app.get('/getjobs', (req, res) => {
-        res.render('getjobs')
-    })
-
-    app.get('/postjobs', (req, res) => {
-        res.render('postjobs')
-    })
-
     app.get('/', (req, res) => {
         res.render('home')
     })
 
-    app.get('/jobs', (req, res) => {
-        res.render('getjobs')
+    // get jobs route
+    app.get('/getjobs', function(req, res) {
+        db.Jobs.findAll().then(function(jobData) {
+            res.render('getjobs', {allJobs: jobData})
+        })
     })
 
     // Display form to add a new job post
-    app.get('/jobs/post', function(req, res) {
+    app.get('/postjobs', (req, res) => {
         res.render('postjobs')
     })
 

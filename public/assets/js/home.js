@@ -116,16 +116,14 @@ $(document).ready(function() {
                 .trim(),
         }
 
-        console.log(newJob)
         // Send the POST request.
-        //below not set up in api routes
         $.ajax('/getjobs', {
             type: 'POST',
             data: newJob,
         }).then(function() {
             console.log('created new Job')
             // Reload the page to get the updated list
-            location.reload()
+            window.location.pathname = "/getjobs";
         })
     })
 })

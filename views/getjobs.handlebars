@@ -7,8 +7,11 @@
 
 {{!-- BELOW IS WHERE WE INSERT BLOCK INFORMATION --}}
 <div class="container">
-    {{!-- Get/view jobs --}}
+    <div class="row">
+        {{!-- Get/view jobs --}}
+        {{#each allJobs}}
         {{> jobsall}}
+        {{/each}}
+    </div>
 </div>
-
 <script type='text/javascript' src='./assets/js/home.js'></script>
