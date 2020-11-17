@@ -2,7 +2,7 @@ INSERT INTO jobseekers (first_name, last_name, yr_exp, education_id, primary_tec
 VALUES ('John', 'Fan', '1', 'Bootcamp', 'Front-End', 'Back-End', 'johnfan7', 'True');
 
 INSERT INTO jobseekers (first_name, last_name, yr_exp, education_id, primary_tech_id, secondary_tech_id, github, remote) 
-VALUES ('Quinn', 'Dong', '4', 'University', 'Back-End', 'Front-End', 'quidoki', 'True');
+VALUES ('Quinn', 'Dong', '4', 'University', 'Back-End', 'Front-End', 'qudoki', 'True');
 
 INSERT INTO jobseekers (first_name, last_name, yr_exp, education_id, primary_tech_id, secondary_tech_id, github, remote) 
 VALUES ('Amy', 'Ventura', '2', 'University', 'Front-End', 'Back-End', 'amyventura', 'False');
