@@ -1,7 +1,6 @@
 const express = require("express");
-// const commentsRoute = require("./comments");
 const router = express.Router();
-const jobRoute = require("./jobs-api-routes");
+const jobRoute = require("./api-routes");
 
 router.use(jobRoute);
 

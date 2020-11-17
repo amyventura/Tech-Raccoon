@@ -1,8 +1,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-// const handlebars = require("handlebars");
-const apiRoutes = require("./routes/api-routes/jobs-api-routes.js");
-const htmlRoutes = require("./routes/html-routes/html-routes.js");
+// const apiRoutes = require("./routes/api-routes/jobs-api-routes.js");
+// const htmlRoutes = require("./routes/html-routes/html-routes.js");
 const db = require("./models");
 const seed = require("./utils/seed.js");
 const errorHandler = require("./utils/errorHandler.js");
@@ -13,13 +12,12 @@ const app = express();
 // good place for a logging middleware library***
 app.use(express.urlencoded({
    extended: true
-}))
+}));
 app.use(express.json());
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
-require("./routes/api-routes/jobs-api-routes.js")(app);
-require("./routes/html-routes/jobs-html-routes.js")(app);
+require("./routes/api-routes/api-routes.js")(app);
 require("./routes/html-routes/html-routes.js")(app);
 
 // Parse application body
