@@ -39,11 +39,15 @@ module.exports = function (app) {
             github: req.body.github,
             remote: req.body.remote
         })
-        .then(() => res.redirect("/getraccoons"))
+    
+        .then(function() {
+            console.log("I'M IN THE REDIRECT!");
+            res.redirect('/getraccoons');
+        })
             .catch(err => res.render("error", {
                 error: err.message
             }));
-    });
+        });
 
     app.get("/api/getraccoons", function (req, res) {
 

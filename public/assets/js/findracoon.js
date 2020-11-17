@@ -1,1 +1,0 @@
-// Displays all techRaccoon profiles (jobseekers saved information)

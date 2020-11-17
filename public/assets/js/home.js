@@ -82,7 +82,7 @@ $(document).ready(function() {
         }).then(function() {
             console.log('created new Jobseeker')
             // Reload the page to get the updated list
-            location.reload()
+            window.location.pathname = "/getraccoons";
         })
     })
 
