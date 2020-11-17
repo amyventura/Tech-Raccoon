@@ -3,74 +3,50 @@ const db = require("../../models");
 module.exports = function (app) {
     // GET route for getting all of the job posts
     app.get("/api/jobs", function (req, res) {
-        Jobs.findAll({}).then(function (dbJob) {
-            res.render(dbJob);
-        })
-    });
-
-    // Display form to add a new job post
-    app.get("/api/jobs/post", function (req, res) {
-        res.render("post");
+        db.Jobs.findAll({}).then(function (dbJob) {
+            res.json(dbJob);
+        });
     });
 
     // POST route for saving a new job post
-    app.post("/api/jobs/post", function (req, res) {
-        let {
-            title,
-            description,
-            technologies,
-            salary,
-            company_name,
-            contact_email,
-            remote_position
-        } = req.body;
-
-        // Make technologies lowercase
-        technologies = technologies.toLowerCase();
-
-        // salary is not included "Unknown" will be printed...also added $
-        if (!salary) {
-            salary = "Unknown";
-        } else {
-            salary = `$${salary}`;
-        }
-
+    app.post("/jobs/post", function (req, res) {
+        
         // Insert into table
         db.Jobs.create({
-                title,
-                description,
-                technologies,
-                salary,
-                company_name,
-                contact_email,
-                remote_position
+            comp_name: req.body.comp_name, 
+            job_descrip: req.body.job_descrip, 
+            education_id: req.body.education_id, 
+            primary_tech_id: req.body.primary_tech, 
+            secondary_tech_id: req.body.secondary_tech, 
+            remote: req.body.remote
             })
-            .then(jobs => res.redirect('/jobs'))
-            .catch(err => res.render('error', {
+            .then(() => res.redirect("/jobs"))
+            .catch(err => res.render("error", {
                 error: err.message
-            }))
+            }));
     });
 
-    // Search for gigs
-    app.get('/search', function (req, res) {
-        let search = req.query;
+    // Search for jobs?
+    app.get('/api/jobs/:search', function (req, res) {
+        let search = req.params.search;
 
+        // by category or name or location
         // Make search lowercase
-        search = search.toLowerCase();
+        // search = search.toLowerCase();
 
-        Jobs.findAll({
-                where: {
-                    technologies: {
-                        [Op.like]: '%' + search + '%'
-                    }
-                }
-            })
-            .then(jobs => res.render('viewJobs', {
-                jobs
-            }))
-            .catch(err => res.render('error', {
-                error: err
-            }));
+    //     Jobs.findAll({
+    //             where: {
+    //                 technologies: {
+    //                     [Op.like]: '%' + search + '%'
+    //                 }
+    //             }
+    //         })
+    //         .then(jobs => res.render('viewJobs', {
+    //             jobs
+    //         }))
+    //         .catch(err => res.render('error', {
+    //             error: err
+    //         }));
     });
 
 };

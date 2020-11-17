@@ -1,12 +1,14 @@
 <div class="row">
    <div class="card col-md-3">
       <div class="card-body">
+         {{#each this}}
          <h5 class="card-title">Offered from: {{Jobs.comp_name}}</h5>
          <p class="card-text">Description: {{Jobs.job_descrip}}</p>
          <a href="#" class="btn btn-primary">Job Link</a>
          <h6 class="card-title">Required: {{Jobs.primary_tech_id}}, {{Jobs.secondary_tech_id}}
          </h6>
          <h6 class="card-title">Remote: {{Jobs.remote}}</h6>
+         {{/each}}
          <button>
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor"
                xmlns="http://www.w3.org/2000/svg">
