@@ -37,16 +37,17 @@ app.get("/", function (req, res) {
 // error handling
 app.use(errorHandler);
 
+const dropTables = true;
 // drops all tables on every restart - one is local, and one is in production - if pushing with force true, you're pushing all tables remotely
 db.sequelize.sync({
-   force: true
+   force: dropTables
 }).then(async () => {
-
+   if(dropTables) await seed(db);
    // seed db
-   await seed(db.Education);
-   await seed(db.Jobs);
-   await seed(db.Jobseekers);
-   await seed(db.Technologies);
+   // await seed(db.Education);
+   // await seed(db.Jobs);
+   // await seed(db.Jobseekers);
+   // await seed(db.Technologies);
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);

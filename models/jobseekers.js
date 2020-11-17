@@ -33,7 +33,12 @@ module.exports = function(sequelize, DataTypes) {
 
      remote: {
         type: DataTypes.STRING
-     }
+     },
+     
+     email: {
+      type: DataTypes.STRING,
+      validate: { len: [1, 500] }
+   },
 
     });
     return Jobseekers;
