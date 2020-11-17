@@ -1,36 +1,42 @@
-const db = require('../../models')
+const db = require("../../models");
 
 module.exports = function(app) {
     // GET route for getting all of the job posts
-    app.get('/api/jobs', function(req, res) {
-        db.Jobs.findAll({}).then(function(dbJob) {
-            res.json(dbJob)
-        })
-    })
+    // app.get("/api/jobs", function(req, res) {
+    //     db.Jobs.findAll().then(function(data) {
+    //         res.json(data);
+    //     });
+    // });
 
     // POST route for saving a new job post
-    app.post('/api/jobs/post', function(req, res) {
+    app.post("/api/getjobs", function(req, res) {
         // Insert into table
         db.Jobs.create({
             comp_name: req.body.comp_name,
             job_descrip: req.body.job_descrip,
-            education_id: req.body.education_id,
             primary_tech_id: req.body.primary_tech_id,
             secondary_tech_id: req.body.secondary_tech_id,
+            job_email: req.body.job_email,
             remote: req.body.remote,
         })
             .then(function() {
-                res.redirect('/getjobs')
+                res.redirect("/getjobs");
             })
             .catch(err =>
-                res.render('error', {
+                res.render("error", {
                     error: err.message,
                 })
-            )
-    })
+            );
+    });
 
-    app.post('/api/getraccoons', function(req, res) {
-        console.log(req.body)
+    app.get("/api/getjobs", function(req, res) {
+        db.Jobs.findAll().then(function(data) {
+            res.json(data);
+        });
+    });
+
+    app.post("/api/getraccoons", function(req, res) {
+        console.log(req.body);
         db.Jobseekers.create({
             first_name: req.body.first_name,
             last_name: req.body.last_name,
@@ -44,26 +50,21 @@ module.exports = function(app) {
         })
 
             .then(function() {
-                res.redirect('/getraccoons')
+                res.redirect("/getraccoons");
             })
             .catch(err =>
-                res.render('error', {
+                res.render("error", {
                     error: err.message,
                 })
-            )
-    })
+            );
+    });
 
-    app.get('/api/getraccoons', function(req, res) {
+    app.get("/api/getraccoons", function(req, res) {
         db.Jobseekers.findAll().then(function(data) {
-            res.json(data)
-        })
-    })
+            res.json(data);
+        });
+    });
 
-    app.get('/api/getjobs', function(req, res) {
-        db.Jobs.findAll().then(function(data) {
-            res.json(data)
-        })
-    })
 
     // Search for jobs?
     // app.get('/api/jobs/:search', function (req, res) {
@@ -86,4 +87,4 @@ module.exports = function(app) {
     //             error: err
     //         }));
     // });
-}
+};
