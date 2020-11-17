@@ -9,7 +9,7 @@ module.exports = function (app) {
     });
 
     // POST route for saving a new job post
-    app.post("/jobs/post", function (req, res) {
+    app.post("/api/jobs/post", function (req, res) {
         
         // Insert into table
         db.Jobs.create({
@@ -27,7 +27,7 @@ module.exports = function (app) {
     });
 
     app.post("/api/getraccoons", function (req, res) {
-        console.log(req.body)
+        console.log(req.body);
         db.Jobseekers.create({
             first_name: req.body.first_name, 
             last_name: req.body.last_name, 
@@ -43,21 +43,20 @@ module.exports = function (app) {
             .catch(err => res.render("error", {
                 error: err.message
             }));
-
-    })
+    });
 
     app.get("/api/getraccoons", function (req, res) {
 
         db.Jobseekers.findAll().then(function(data){
-            res.json(data)
-        })
-    })
+            res.json(data);
+        });
+    });
 
 
 
     // Search for jobs?
-    app.get('/api/jobs/:search', function (req, res) {
-        let search = req.params.search;
+    // app.get('/api/jobs/:search', function (req, res) {
+    //     let search = req.params.search;
 
         // by category or name or location
         // Make search lowercase
@@ -65,17 +64,16 @@ module.exports = function (app) {
 
     //     Jobs.findAll({
     //             where: {
-    //                 technologies: {
-    //                     [Op.like]: '%' + search + '%'
+    //                 
     //                 }
     //             }
     //         })
-    //         .then(jobs => res.render('viewJobs', {
+    //         .then(jobs => res.render("jobsall", {
     //             jobs
     //         }))
     //         .catch(err => res.render('error', {
     //             error: err
     //         }));
-    });
+    // });
 
 };
