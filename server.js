@@ -16,6 +16,7 @@ const app = express();
 app.use(express.static("public"));
 require("./routes/api-routes/jobs-api-routes.js")(app);
 require("./routes/html-routes/jobs-html-routes.js")(app);
+require("./routes/html-routes/html-routes.js")(app);
 
 // Parse application body
 app.use(express.urlencoded({
