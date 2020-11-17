@@ -15,19 +15,19 @@ module.exports = function(sequelize, DataTypes) {
      },
 
      education_id: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING
      },
 
      primary_tech_id: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING
      },
 
      secondary_tech_id: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING
      },
 
      remote: {
-        type: DataTypes.BOOLEAN
+        type: DataTypes.STRING
      }
 
     });
