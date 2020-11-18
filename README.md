@@ -15,12 +15,12 @@ We wanted our application to be as user friendly and intuitive as possible witho
 
 
 # Table of Contents
-- [Installation](https://github.com/qudoki/group1-project2/blob/master/README.md#installation)
-- [Usage](https://github.com/qudoki/group1-project2/blob/master/README.md#usage)
-- [Tests](https://github.com/qudoki/group1-project2/blob/master/README.md#usage)
-- [Contributing](https://github.com/qudoki/group1-project2/blob/master/README.md#contributions)
-- [Questions](https://github.com/qudoki/group1-project2/blob/master/README.md#questions)
-- [License](https://github.com/qudoki/group1-project2/blob/master/README.md#license)
+- [Installation](https://github.com/qudoki/group1-project2/README.md#installation)
+- [Usage](https://github.com/qudoki/group1-project2/README.md#usage)
+- [Tests](https://github.com/qudoki/group1-project2/README.md#usage)
+- [Contributing](https://github.com/qudoki/group1-project2/README.md#contributions)
+- [Questions](https://github.com/qudoki/group1-project2/README.md#questions)
+- [License](https://github.com/qudoki/group1-project2/README.md#license)
 
 
 ## Installation:
@@ -41,16 +41,16 @@ We wanted our application to be as user friendly and intuitive as possible witho
 ## Questions:
 If you have any questions, please feel free to reach us via Github or email below.
 
-[Github Profile](https://github.com/qudoki)
-[Github Profile](https://github.com/amyventura)
-[Github Profile](https://github.com/johnfan7)
-[Github Profile](https://github.com/ismaelm1991)
+- qudoki [Github Profile](https://github.com/qudoki)
+- amyventura [Github Profile](https://github.com/amyventura)
+- johnfan7 [Github Profile](https://github.com/johnfan7)
+- ismaelm1991 [Github Profile](https://github.com/ismaelm1991)
 
 ### Contributors:
-[Email Address]<qdong327@gmail.com>
-[Email Address]<amyvntr@yahoo.com>
-[Email Address]<phantastic1999@gmail.com>
-[Email Address]<ismaelgmercado@yahoo.com>
+- <qdong327@gmail.com>
+- <amyvntr@yahoo.com>
+- <phantastic1999@gmail.com>
+- <ismaelgmercado@yahoo.com>
 
  
 ## License: 
