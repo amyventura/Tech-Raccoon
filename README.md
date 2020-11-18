@@ -71,11 +71,10 @@ If you have any questions, please feel free to reach us via Github or email belo
 - <ismaelgmercado@yahoo.com>
 
  
-## License: 
- MIT
+## License:
 ![License](https://img.shields.io/badge/license-MIT-green")
 
-    Copyright 2020 Group 1 - Project 2 
+    Copyright 2020 Tech Raccoon (Group 1 - Project 2)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
