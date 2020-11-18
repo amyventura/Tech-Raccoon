@@ -1,7 +1,7 @@
 # TechRaccoon 
 
 ### Deployed App
- - [Installation](https://intense-falls-12076.herokuapp.com/)
+ - [Heroku App](https://intense-falls-12076.herokuapp.com/)
 
 ### Description: 
 Hello all, and welcome to our site dedicated to assisting both job seekers and small businesses who are seeking new candidates for their existing or up and coming business.
