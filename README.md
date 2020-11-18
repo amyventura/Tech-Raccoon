@@ -17,6 +17,7 @@ We wanted our application to be as user friendly and intuitive as possible witho
 # Table of Contents
 - [Installation](https://github.com/qudoki/group1-project2/blob/main/README.md#installation)
 - [Usage](https://github.com/qudoki/group1-project2/blob/main/README.md#usage)
+- [Screenshots](https://github.com/qudoki/group1-project2/blob/main/README.md#screenshots)
 - [Tests](https://github.com/qudoki/group1-project2/blob/main/README.md#usage)
 - [Contributing](https://github.com/qudoki/group1-project2/blob/main/README.md#contributions)
 - [Questions](https://github.com/qudoki/group1-project2/blob/main/README.md#questions)
@@ -29,6 +30,23 @@ We wanted our application to be as user friendly and intuitive as possible witho
 
 ## Usage:
 - In order to use or test this package, please enter the following command: "See Travis or ESLint documentation." and follow the prompts.
+
+## Screenshots:
+
+#### Home Page
+![ScreenShot](/assets/home.png)
+#### Browse Jobs
+![ScreenShot](assets/jobs.png)
+#### Find Raccoons (Coders)
+![ScreenShot](assets/home.png)
+#### Create Job
+![ScreenShot](screenshot.jpg)
+#### Create Profile
+![ScreenShot](screenshot.jpg)
+#### Login
+![ScreenShot](screenshot.jpg)
+#### Signup
+![ScreenShot](screenshot.jpg)
 
 
 ## Contributing:
