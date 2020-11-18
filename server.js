@@ -17,34 +17,7 @@ app.use(
 )
 app.use(express.json())
 
-// new middleware - (new package swagger documentation)
-// const apiRoutes = require('./routes/api-routes/api-routes');
-const expressSwagger = require('express-swagger-generator')(app);
 
-let options = {
-    swaggerDefinition: {
-        info: {
-            description: 'This is a sample server',
-            title: 'Swagger',
-            version: '1.0.0',
-        },
-        host: 'localhost:3000',
-        basePath: '/v1',
-        produces: ['application/json', 'application/xml'],
-        schemes: ['http', 'https'],
-        securityDefinitions: {
-            JWT: {
-                type: 'apiKey',
-                in: 'header',
-                name: 'Authorization',
-                description: '',
-            },
-        },
-    },
-    basedir: __dirname, //app absolute path
-    files: ["./routes/api-routes/api-routes.js"], //Path to the API handle folder
-}
-expressSwagger(options)
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static('public'))
