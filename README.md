@@ -15,12 +15,12 @@ We wanted our application to be as user friendly and intuitive as possible witho
 
 
 # Table of Contents
-- [Installation](https://github.com/qudoki/group1-project2/README.md#installation)
-- [Usage](https://github.com/qudoki/group1-project2/README.md#usage)
-- [Tests](https://github.com/qudoki/group1-project2/README.md#usage)
-- [Contributing](https://github.com/qudoki/group1-project2/README.md#contributions)
-- [Questions](https://github.com/qudoki/group1-project2/README.md#questions)
-- [License](https://github.com/qudoki/group1-project2/README.md#license)
+- [Installation](https://github.com/qudoki/group1-project2/blob/main/README.md#installation)
+- [Usage](https://github.com/qudoki/group1-project2/blob/main/README.md#usage)
+- [Tests](https://github.com/qudoki/group1-project2/blob/main/README.md#usage)
+- [Contributing](https://github.com/qudoki/group1-project2/blob/main/README.md#contributions)
+- [Questions](https://github.com/qudoki/group1-project2/blob/main/README.md#questions)
+- [License](https://github.com/qudoki/group1-project2/blob/main/README.md#license)
 
 
 ## Installation:
