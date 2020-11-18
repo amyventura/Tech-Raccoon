@@ -8,11 +8,6 @@ $(document).ready(function() {
     const savedJobs = $("#my-saved-jobs");
     const homeBtn = $("#home-button");
 
-    // Hide in different pages - maybe not needed
-    const hideExceptIndex = $("#hide-when-not-index");
-    const hideExceptBrowseJobs = $("#hide-when-not-browsejobs");
-    const hideExceptFindRaccoons = $("#hide-when-not-findraccoons");
-
     // References to buttons
     const findRaccoonBtn = $("#find-raccoon-btn");
     const postJobBtn = $("#post-job-btn");
@@ -20,6 +15,17 @@ $(document).ready(function() {
     const createProfileBtn = $("#create-profile-btn");
 
     console.log("Loaded!");
+
+    // Github button
+    const githubBtn = $(".github");
+
+    // click into github
+    // githubBtn.click(function() {
+    //     console.log(this);
+    //     e.preventDafault();
+    //     var url = $(this).attr('href');
+    //     window.open = (url, _blank);
+    // })
 
     // Buttons to login or saved jobs
     jobSeekerLogin.click(function() {

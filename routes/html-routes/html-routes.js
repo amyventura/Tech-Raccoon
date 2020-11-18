@@ -1,6 +1,6 @@
-const db = require('../../models');
-var isAuthenticated = require("../../config/middleware/isAuthenticated.js");
-var path = require("path");
+const db = require('../../models')
+var isAuthenticated = require('../../config/middleware/isAuthenticated.js')
+var path = require('path')
 
 module.exports = function(app) {
     //BELOW IS WORKING!!!!! :)
@@ -23,7 +23,6 @@ module.exports = function(app) {
     // get profiles route
     app.get('/getraccoons', function(req, res) {
         db.Jobseekers.findAll().then(function(raccoonData) {
-            console.log('Here is the: ', raccoonData)
             res.render('getraccoons', { raccoons: raccoonData })
         })
 
@@ -35,9 +34,7 @@ module.exports = function(app) {
         res.render('postprofiles')
     })
 
-
-
-//fix below per passport
+    //fix below per passport
 
     app.get('/savedjobs', function(req, res) {
         // If the user already has an account send them to the members page
@@ -67,5 +64,11 @@ module.exports = function(app) {
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
     app.get('/savedjobs', isAuthenticated, function(req, res) {
         res.render('savedjobs')
+    })
+
+    // github
+    app.get('/github', (req, res) => {
+            // var gitUser = db.raccoonData.dataValues.github;
+            res.redirect('http://www.github.com/');
     })
 }
