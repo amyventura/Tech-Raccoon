@@ -192,9 +192,36 @@ body {
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+    margin-top: 50px;
     clear: both;
 }
 
 .block {
     display: block;
+}
+
+.card-body {
+    background-color: #e0cebe;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: #2b3538 2px solid;
+    margin-top: 10px;
+}
+
+.card-text {
+    height: 100px;
+}
+
+.header-name {
+    font-family: 'Lobster', cursive;
+    color: #44423e;
+}
+
+.card-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+svg:hover {
+    fill: rgb(255, 205, 68);
 }

@@ -21,6 +21,14 @@ $(document).ready(function() {
 
     console.log("Loaded!");
 
+    // Buttons to login or saved jobs
+    jobSeekerLogin.click(function() {
+        location.href = "/login";
+    })
+    savedJobs.click(function() {
+        location.href = "/savedjobs";
+    })
+
     // Function to click into various pages
     getJobBtn.click(function() {
         location.href = "/getjobs";
