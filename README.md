@@ -5,7 +5,7 @@ Hello all, and welcome to our site dedicated to assisting both job seekers and s
 
 Our application which has been dubbed "TechRaccoon" is geared towards folks and businesses that are looking to hire within the tech industry, whether that is in software engineering or within programming universe. This application is catered to those that are looking to expand their horizons with their existing skills, or learn some new skills from a new job environment!
 
-This application takes advantage of several different types of data that are gathered from SQL servers, backend javascript, handlebars to operate the front end, and of course API routes!
+This application takes advantage of several different types of data that are gathered from SQL servers, backend javascript, handlebars to operate the front end, and of course API routes! Other technologies or packages utilized include express, express handlebars, node.js, passport, and becrypt.
 
 The application is meant to gather certain skills from applicants that want to list their knowledge base. Using things like education and coding launguages, to employnent history just to name a few. Our application is also designed to filter out applicants with certain requirements they prefer. Such as a degree or certification.
 
