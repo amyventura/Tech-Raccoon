@@ -62,12 +62,34 @@ module.exports = function (db) {
          first_name: "Izzy",
          last_name: "Mercado",
          yr_exp: "4",
-         education_id: "Bootcamp",
+         education_id: "Self-Taught",
          primary_tech_id: "UX/UI",
          secondary_tech_id: "Frontend",
          github: "izzymercado",
          remote: "False",
-         email: "ismaelgmercado@gmail.com"
+         email: "izzymercado@gmail.com"
+      }),
+      db.Jobseekers.create({
+         first_name: "Andrew",
+         last_name: "Finkernagel",
+         yr_exp: "10",
+         education_id: "University",
+         primary_tech_id: "Backend",
+         secondary_tech_id: "Frontend",
+         github: "andrewgithub",
+         remote: "True",
+         email: "andrew@gmail.com"
+      }),
+      db.Jobseekers.create({
+         first_name: "Robert",
+         last_name: "Han",
+         yr_exp: "10",
+         education_id: "Bootcamp",
+         primary_tech_id: "Frontend",
+         secondary_tech_id: "Design",
+         github: "robertgithub",
+         remote: "True",
+         email: "robert@gmail.com"
       }),
       db.Jobs.create({
          comp_name:"Amazon", 

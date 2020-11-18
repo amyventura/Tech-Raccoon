@@ -1,10 +1,13 @@
 
 <div class="card col-md-3">
    <div class="card-body">
-      <h5 class="card-title">Jobseeker: {{dataValues.first_name}} {{dataValues.last_name}}</h5>
-      <p class="card-text">{{dataValues.yr_exp}} years of experience</p>
+      <h6 class="card-title">Jobseeker:</h6>
+      <h3 class="header-name">{{dataValues.first_name}} {{dataValues.last_name}}</h3>
+      <div class="card-text">{{dataValues.yr_exp}} years of experience
+         <img width="80px" src="https://localvoicesliberia.com/wp-content/uploads/2020/03/user-alt-512.png" />
+      </div>
       {{!-- create link below dynamically --}}
-      <a href="#" class="btn btn-primary">Github {{dataValues.github}}</a>
+      <a href="www.github.com/" class="btn btn-light">Github {{dataValues.github}}</a>
       <h6 class="card-title">Good at: {{dataValues.primary_tech_id}}, {{dataValues.secondary_tech_id}}
       </h6>
       <h6 class="card-title">Remote: {{dataValues.remote}}</h6>
