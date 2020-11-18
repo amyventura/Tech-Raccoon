@@ -29,7 +29,7 @@
     "no-var": "error",
     // "prefer-arrow-callback": "error",
     "prefer-const": "error",
-    "quotes": ["error", "double"],
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "vars-on-top": "error",
     "yoda": "error"
