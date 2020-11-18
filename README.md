@@ -34,19 +34,19 @@ We wanted our application to be as user friendly and intuitive as possible witho
 ## Screenshots:
 
 #### Home Page
-![ScreenShot](/assets/home.png)
+![ScreenShot](assets/home.png)
 #### Browse Jobs
 ![ScreenShot](assets/jobs.png)
 #### Find Raccoons (Coders)
-![ScreenShot](assets/home.png)
+![ScreenShot](assets/raccoons.png)
 #### Create Job
-![ScreenShot](screenshot.jpg)
+![ScreenShot](assets/postjob.png)
 #### Create Profile
-![ScreenShot](screenshot.jpg)
+![ScreenShot](assets/postprofile.png)
 #### Login
-![ScreenShot](screenshot.jpg)
+![ScreenShot](assets/login.png)
 #### Signup
-![ScreenShot](screenshot.jpg)
+![ScreenShot](assets/signup.png)
 
 
 ## Contributing:
