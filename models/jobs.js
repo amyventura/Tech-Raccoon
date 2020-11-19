@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-   const Jobs = sequelize.define("Jobs", {
+   const Jobs = sequelize.define('Jobs', {
       comp_name: {
          type: DataTypes.STRING,
          validate: {

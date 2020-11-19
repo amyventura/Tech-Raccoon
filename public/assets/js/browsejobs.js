@@ -1,19 +1,19 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // jobContainer holds all of our posts
-    var jobContainer = $(".job-container");
-    var location = $("#location");
-    var jobs;
+    const jobContainer = $('.job-container');
+    const location = $('#location');
+    let jobs;
 
     // This function grabs posts from the database and updates the view
     function getJobs(category) {
-        var locationString = location || "";
+        let locationString = location || '';
         if (locationString) {
-            locationString = "/location/" + locationString;
+            locationString = '/location/' + locationString;
         }
-        $.get("/api/jobs" + locationString, function (data) {
-            console.log("Jobs", data);
+        $.get('/api/jobs' + locationString, function(data) {
+            console.log('Jobs', data);
             jobs = data;
-            if (!jobss || !jobs.length) {
+            if (!jobs || !jobs.length) {
                 displayEmpty();
             } else {
                 initializeRows();
@@ -27,7 +27,7 @@ $(document).ready(function () {
     // jobContainer
     function initializeRows() {
         jobContainer.empty();
-        var postsToAdd = [];
+        let postsToAdd = [];
         for (var i = 0; i < jobs.length; i++) {
             postsToAdd.push(createNewRow(jobs[i]));
         }
@@ -37,13 +37,14 @@ $(document).ready(function () {
     // This function displays a message when there are no jobs
     function displayEmpty() {
         jobContainer.empty();
-        var messageH2 = $("<h2>");
+        const messageH2 = $('<h2>');
         messageH2.css({
-            "text-align": "center",
-            "margin-top": "50px"
+            'text-align': 'center',
+            'margin-top': '50px',
         });
-        messageH2.html("No jobs yet for this search, navigate <a href='/postjobs'>here</a> in order to create a new job post.");
+        messageH2.html(
+            'No jobs yet for this search, navigate <a href='/ postjobs, '>here</a> in order to create a new job post.'
+        );
         jobContainer.append(messageH2);
     }
-
 });
