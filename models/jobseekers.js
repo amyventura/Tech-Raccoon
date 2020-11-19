@@ -1,46 +1,53 @@
-module.exports = function(sequelize, DataTypes) {
-    const Jobseekers = sequelize.define("Jobseekers", {
-       first_name: {
-          type: DataTypes.STRING,
-          validate: { len: [1, 500] }
-       },
-       
-       last_name: {
-        type: DataTypes.STRING,
-        validate: { len: [1, 500] }
-     },
+module.exports = function (sequelize, DataTypes) {
+   const Jobseekers = sequelize.define('Jobseekers', {
+      first_name: {
+         type: DataTypes.STRING,
+         validate: {
+            len: [1, 500]
+         }
+      },
 
-        yr_exp: {
-        type: DataTypes.STRING
-     },
+      last_name: {
+         type: DataTypes.STRING,
+         validate: {
+            len: [1, 500]
+         }
+      },
 
-     education_id: {
-        type: DataTypes.STRING
-     },
+      yr_exp: {
+         type: DataTypes.STRING
+      },
 
-     primary_tech_id: {
-        type: DataTypes.STRING
-     },
+      education_id: {
+         type: DataTypes.STRING
+      },
 
-     secondary_tech_id: {
-        type: DataTypes.STRING
-     },
+      primary_tech_id: {
+         type: DataTypes.STRING
+      },
 
-     github: {
-        type: DataTypes.STRING,
-        validate: { len: [1, 500] }
-     },
+      secondary_tech_id: {
+         type: DataTypes.STRING
+      },
 
-     remote: {
-        type: DataTypes.STRING
-     },
-     
-     email: {
-      type: DataTypes.STRING,
-      validate: { len: [1, 500] }
-   },
+      github: {
+         type: DataTypes.STRING,
+         validate: {
+            len: [1, 500]
+         }
+      },
 
-    });
-    return Jobseekers;
- };
- 
+      remote: {
+         type: DataTypes.STRING
+      },
+
+      email: {
+         type: DataTypes.STRING,
+         validate: {
+            len: [1, 500]
+         }
+      },
+
+   });
+   return Jobseekers;
+};
